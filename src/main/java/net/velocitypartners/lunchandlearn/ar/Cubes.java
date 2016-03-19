@@ -41,8 +41,8 @@ public class Cubes extends PApplet {
 
     public void setup()
     {
-        size(1280, 720, OPENGL); // the sketch will resize correctly, so for example setting it to 1920 x 1080 will work as well
-        cam = new Capture(this, 1280, 720); // initializing the webcam capture at a specific resolution (correct/possible settings depends on YOUR webcam)
+        size(1280, 800, OPENGL); // the sketch will resize correctly, so for example setting it to 1920 x 1080 will work as well
+        cam = new Capture(this, 1280, 800); // initializing the webcam capture at a specific resolution (correct/possible settings depends on YOUR webcam)
         cam.start(); // start capturing
         // to correct for the scale difference between the AR detection coordinates and the size at which the result is displayed
         displayScale = (float) width / arWidth;
