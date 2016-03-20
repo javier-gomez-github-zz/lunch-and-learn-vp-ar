@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="macosx64">
+    <CLASSES />
+    <JAVADOC />
+    <NATIVE>
+      <root url="file://$PROJECT_DIR$/lib/macosx64" />
+    </NATIVE>
+    <SOURCES />
+  </library>
+</component>
