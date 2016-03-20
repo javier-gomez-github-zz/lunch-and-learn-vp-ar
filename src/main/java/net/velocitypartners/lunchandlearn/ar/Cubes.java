@@ -15,9 +15,9 @@ public class Cubes extends PApplet {
     // a central location is used for the camera_para.dat and pattern files, so you don't have to copy them to each individual sketch
     // Make sure to change both the camPara and the patternPath String to where the files are on YOUR computer
     // the full path to the camera_para.dat file
-    String camPara = "/Users/jgomez/Documents/Processing/libraries/nyar4psg/data/camera_para.dat";
+    String camPara = "extra/camera_para.dat";
     // the full path to the .patt pattern files
-    String patternPath = "/Users/jgomez/Documents/Processing/libraries/nyar4psg/patternMaker/examples/ARToolKit_Patterns";
+    String patternPath = "extra/patterns";
     // the dimensions at which the AR will take place. with the current library 1280x720 is about the highest possible resolution.
     int arWidth = 640;
     int arHeight = 360;
