@@ -9,7 +9,7 @@ import processing.video.Capture;
 import java.io.File;
 import java.io.FilenameFilter;
 
-public class Cubes extends PApplet {
+public class Spheres extends PApplet {
     // the full path to the camera_para.dat file
     String camPara = "extra/camera_para.dat";
     // the full path to the .patt pattern files
@@ -56,12 +56,12 @@ public class Cubes extends PApplet {
             PImage cSmall = cam.get();
             cSmall.resize(arWidth, arHeight);
             nya.detect(cSmall); // detect markers in the image
-            drawBoxes(); // draw boxes on the detected markers (3D)
+            drawSpheres(); // draw boxes on the detected markers (3D)
         }
     }
 
-    // this function draws correctly placed 3D boxes on top of detected markers
-    void drawBoxes() {
+    // this function draws correctly placed 3D spheres on top of detected markers
+    void drawSpheres() {
         // set the AR perspective uniformly, this general point-of-view is the same for all markers
         nya.setARPerspective();
         // for all the markers...
@@ -72,12 +72,13 @@ public class Cubes extends PApplet {
             // get the Matrix for this marker and use it (through setMatrix)
             setMatrix(nya.getMarkerMatrix(i));
             scale(1, -1); // turn things upside down to work intuitively for Processing users
-            colors[i] = color(255, 0, 0, 190);
-            translate(0, 0, 30); // translate the box by half (20) of it's size (40)
+            colors[i] = color(0, 155, 155, 100);
+            translate(0, 0, 100);
+//            rotateX(90);
             lights(); // turn on some lights
-            stroke(0); // give the box a black stroke
+            stroke(0); // give the sphere a black stroke
             fill(colors[i]); // fill the box by it's individual color
-            box(60); // the BOX
+            sphere(60); // the SPHERE
             noLights(); // turn off the lights
         }
         // reset to the default perspective
@@ -91,6 +92,6 @@ public class Cubes extends PApplet {
     }
 
     public static void main(String[] args) {
-        PApplet.main(new String[]{"--present", "net.velocitypartners.lunchandlearn.ar.Cubes"});
+        PApplet.main(new String[]{"--present", "net.velocitypartners.lunchandlearn.ar.Spheres"});
     }
 }
