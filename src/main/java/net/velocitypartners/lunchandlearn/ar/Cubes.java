@@ -7,10 +7,11 @@ public class Cubes extends ARHelper {
 
     public void draw()
     {
-        // if there is a cam image coming in...
-        if (cam.available()) {
+        // if there is a camera available
+        if (camera.available()) {
             initCameraAndDetectMarkers();
-            drawBoxes(); // draw boxes on the detected markers (3D)
+            // draw boxes on the detected markers (3D)
+            drawBoxes();
         }
     }
 
@@ -18,21 +19,30 @@ public class Cubes extends ARHelper {
     void drawBoxes() {
         // set the AR perspective uniformly, this general point-of-view is the same for all markers
         nya.setARPerspective();
-        // for all the markers...
-        for (int i=0; i<numMarkers; i++) {
-            // if the marker does NOT exist (the ! exlamation mark negates it) continue to the next marker, aka do nothing
+        // iterates over all the markers
+        for (int i = 0; i < numMarkers; i++) {
+            // if the marker does NOT exist continue to the next marker (do nothing)
             if ((!nya.isExistMarker(i))) { continue; }
-            // the following code is only reached and run if the marker DOES EXIST
+
             // get the Matrix for this marker and use it (through setMatrix)
             setMatrix(nya.getMarkerMatrix(i));
-            scale(1, -1); // turn things upside down to work intuitively for Processing users
+
+            // set color (RGB) and transparency
             colors[i] = color(255, 0, 0, 190);
-            translate(0, 0, 30); // translate the box by half (20) of it's size (40)
-            lights(); // turn on some lights
-            stroke(0); // give the box a black stroke
-            fill(colors[i]); // fill the box by it's individual color
-            box(65); // the BOX
-            noLights(); // turn off the lights
+
+            // translate the box on axis Z (for perspective)
+            translate(0, 0, 30);
+
+            // turn on some lights
+            lights();
+            // give the box a black stroke
+            stroke(0);
+
+            // fill the box by it's individual color
+            fill(colors[i]);
+
+            // draws the BOX (size 65)
+            box(65);
         }
         // reset to the default perspective
         perspective();

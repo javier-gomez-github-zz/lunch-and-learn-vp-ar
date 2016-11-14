@@ -7,10 +7,11 @@ public class Spheres extends ARHelper {
 
     public void draw()
     {
-        // if there is a cam image coming in...
-        if (cam.available()) {
+        // if there is a camera available
+        if (camera.available()) {
             initCameraAndDetectMarkers();
-            drawSpheres(); // draw spheres on the detected markers (3D)
+            // draw spheres on the detected markers (3D)
+            drawSpheres();
         }
     }
 
@@ -18,22 +19,30 @@ public class Spheres extends ARHelper {
     void drawSpheres() {
         // set the AR perspective uniformly, this general point-of-view is the same for all markers
         nya.setARPerspective();
-        // for all the markers...
+        // iterates over all the markers
         for (int i=0; i<numMarkers; i++) {
-            // if the marker does NOT exist (the ! exlamation mark negates it) continue to the next marker, aka do nothing
+            // if the marker does NOT exist continue to the next marker (do nothing)
             if ((!nya.isExistMarker(i))) { continue; }
-            // the following code is only reached and run if the marker DOES EXIST
+
             // get the Matrix for this marker and use it (through setMatrix)
             setMatrix(nya.getMarkerMatrix(i));
-            scale(1, -1); // turn things upside down to work intuitively for Processing users
-            colors[i] = color(0, 155, 155, 100);
+
+            // set color (RGB) and transparency
+            colors[i] = color(155, 0, 155, 140);
+
+            // translate the sphere on axis Z (for perspective)
             translate(0, 0, 100);
-//            rotateX(90);
-            lights(); // turn on some lights
-            stroke(0); // give the sphere a black stroke
-            fill(colors[i]); // fill the box by it's individual color
-            sphere(50); // the SPHERE
-            noLights(); // turn off the lights
+
+            // turn on some lights
+            lights();
+            // give the sphere a black stroke
+            stroke(0);
+
+            // fill the sphere by it's individual color
+            fill(colors[i]);
+
+            // draws the SPHERE (size 50)
+            sphere(50);
         }
         // reset to the default perspective
         perspective();

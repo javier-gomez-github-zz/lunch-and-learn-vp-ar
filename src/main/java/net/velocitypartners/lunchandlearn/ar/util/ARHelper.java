@@ -18,29 +18,40 @@ public class ARHelper extends PApplet {
     // the dimensions at which the AR will take place. with the current library 1280x720 is about the highest possible resolution.
     protected final int arWidth = 1280;
     protected final int arHeight = 720;
-    // the number of pattern markers (from the complete list of .patt files) that will be detected, here the first 10 from the list.
+    // the number of pattern markers (from the complete list of .patt files) that will be detected, here the first 100 from the list.
     protected final int numMarkers = 100;
     protected float displayScale;
     protected final int[] colors = new int[numMarkers];
 
-    protected Capture cam;
+    protected Capture camera;
     protected MultiMarker nya;
 
     public void setup()
     {
-        cam = new Capture(this, "name=HD Pro Webcam C920,size=1280x720,fps=30");
-        size(arWidth, arHeight, OPENGL); // the sketch will resize correctly, so for example setting it to 1920 x 1080 will work as well
-        cam.start(); // start capturing
+        // initialize Camera
+        camera = new Capture(this, "name=HD Pro Webcam C920,size=1280x720,fps=30");
+
+        // the sketch will resize correctly, so for example setting it to 1920 x 1080 will work as well
+        size(arWidth, arHeight, OPENGL);
+
+        // start capturing
+        camera.start();
+
         // to correct for the scale difference between the AR detection coordinates and the size at which the result is displayed
         displayScale = (float) width / arWidth;
-        noStroke(); // turn off stroke for the rest of this sketch :-)
+
+        // turn off stroke for the rest of this sketch
+        noStroke();
+
         // create a new MultiMarker at a specific resolution (arWidth x arHeight), with the default camera calibration and coordinate system
         nya = new MultiMarker(this, arWidth, arHeight, camPara, NyAR4PsgConfig.CONFIG_DEFAULT);
-        // set the delay after which a lost marker is no longer displayed. by default set to something higher, but here manually set to immediate.
+
+        // set the delay (0 - 255) after which a lost marker is no longer displayed. by default set to something higher, but here manually set to immediate.
         nya.setLostDelay(1);
+
+        // load all available Patterns in the path provided
         String[] patterns = loadPatternFileNames(patternPath);
         // for the selected number of markers, add the marker for detection
-        // create an individual scale, noiseScale and maximum mountainHeight for that marker (= mountain)
         for (int i=0; i<numMarkers; i++) {
             nya.addARMarker(patternPath + "/" + patterns[i], 80);
         }
@@ -53,12 +64,16 @@ public class ARHelper extends PApplet {
     }
 
     protected void initCameraAndDetectMarkers() {
-        cam.read(); // read the cam image
-        background(cam); // a background call is needed for correct display of the marker results
-        image(cam, 0, 0, width, height); // display the image at the width and height of the sketch window
-        // create a copy of the cam image at the resolution of the AR detection (otherwise nya.detect will throw an assertion error!)
-        PImage cSmall = cam.get();
+        // reads the image from the camera
+        camera.read();
+        // a background call is needed for correct display of the marker results
+        background(camera);
+        // display the image at the width and height of the sketch window
+        image(camera, 0, 0, width, height);
+        // create a copy of the camera image and resize it to the resolution of the AR detection (otherwise nya.detect will throw an assertion error)
+        PImage cSmall = camera.get();
         cSmall.resize(arWidth, arHeight);
-        nya.detect(cSmall); // detect markers in the image
+        // detect markers in the image
+        nya.detect(cSmall);
     }
 }

@@ -13,17 +13,23 @@ public class SpheresAndTextures extends ARHelper {
     @Override
     public void setup() {
         super.setup();
+
+        // loads texture from external file
         earth = loadImage("extra/textures/world32k.jpg");
+        // creates an Sphere object of size 100
         globe = createShape(SPHERE, 100);
+        // sets the previous defined texture into the sphere object
         globe.setTexture(earth);
+        // removes borders
         noStroke();
     }
 
     public void draw()
     {
-        // if there is a cam image coming in...
-        if (cam.available()) {
+        // if there is a camera available
+        if (camera.available()) {
             initCameraAndDetectMarkers();
+            // draws spheres with textures on the detected markers (3D)
             loadTexturesAndDrawSphere();
         }
     }
@@ -32,21 +38,31 @@ public class SpheresAndTextures extends ARHelper {
     void loadTexturesAndDrawSphere() {
         // set the AR perspective uniformly, this general point-of-view is the same for all markers
         nya.setARPerspective();
-        // for all the markers...
-        for (int i=0; i<numMarkers; i++) {
-            // if the marker does NOT exist (the ! exlamation mark negates it) continue to the next marker, aka do nothing
+        // iterates over all the markers
+        for (int i = 0; i < numMarkers; i++) {
+            // if the marker does NOT exist continue to the next marker (do nothing)
             if ((!nya.isExistMarker(i))) { continue; }
-            // the following code is only reached and run if the marker DOES EXIST
+
             // get the Matrix for this marker and use it (through setMatrix)
             setMatrix(nya.getMarkerMatrix(i));
             scale(1, -1); // turn things upside down to work intuitively for Processing users
+
+            // translate the sphere on axis Z (for perspective)
             translate(0, 0, 200);
-            rotateX(300.0f);
-            rotateY(50.0f);
-            lights(); // turn on some lights
-            stroke(0); // give the sphere a black stroke
+
+            // rotates the sphere in axis X, Y and Z
+            rotateX(160.0f);
+            rotateY(45.0f);
+            rotateZ(90);
+
+            // turn on some lights
+            lights();
+
+            // give the sphere a black stroke
+            stroke(0);
+
+            // draws the shape
             shape(globe);
-            noLights(); // turn off the lights
         }
         // reset to the default perspective
         perspective();
