@@ -16,8 +16,8 @@ public class SpheresAndTextures extends ARHelper {
 
         // loads texture from external file
         earth = loadImage("extra/textures/world32k.jpg");
-        // creates an Sphere object of size 100
-        globe = createShape(SPHERE, 100);
+        // creates an Sphere object of size 60
+        globe = createShape(SPHERE, 60);
         // sets the previous defined texture into the sphere object
         globe.setTexture(earth);
         // removes borders
@@ -41,14 +41,14 @@ public class SpheresAndTextures extends ARHelper {
         // iterates over all the markers
         for (int i = 0; i < numMarkers; i++) {
             // if the marker does NOT exist continue to the next marker (do nothing)
-            if ((!nya.isExistMarker(i))) { continue; }
+            if ((!nya.isExistMarker(i)) || ((i != 12) && (i != 23) && (i != 45) && (i != 88))) { continue; }
 
             // get the Matrix for this marker and use it (through setMatrix)
             setMatrix(nya.getMarkerMatrix(i));
             scale(1, -1); // turn things upside down to work intuitively for Processing users
 
             // translate the sphere on axis Z (for perspective)
-            translate(0, 0, 200);
+            translate(0, 0, 100);
 
             // rotates the sphere in axis X, Y and Z
             rotateX(160.0f);

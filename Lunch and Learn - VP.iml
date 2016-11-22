@@ -11,5 +11,6 @@
     <orderEntry type="library" name="gstreamer-java" level="project" />
     <orderEntry type="library" name="macosx64" level="project" />
     <orderEntry type="library" name="NyAR4psg" level="project" />
+    <orderEntry type="library" name="OBJLoader" level="project" />
   </component>
 </module>

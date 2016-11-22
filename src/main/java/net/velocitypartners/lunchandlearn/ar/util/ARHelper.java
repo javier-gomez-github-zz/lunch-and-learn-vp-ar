@@ -31,13 +31,13 @@ public class ARHelper extends PApplet {
         // initialize Camera
         camera = new Capture(this, "name=HD Pro Webcam C920,size=1280x720,fps=30");
 
-        // the sketch will resize correctly, so for example setting it to 1920 x 1080 will work as well
+        // resize the sketch and set the renderer
         size(arWidth, arHeight, OPENGL);
 
         // start capturing
         camera.start();
 
-        // to correct for the scale difference between the AR detection coordinates and the size at which the result is displayed
+        // corrects the scale difference between the AR detection coordinates and the size at which the result is displayed
         displayScale = (float) width / arWidth;
 
         // turn off stroke for the rest of this sketch
