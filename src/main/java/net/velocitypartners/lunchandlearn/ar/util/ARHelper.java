@@ -16,8 +16,8 @@ public class ARHelper extends PApplet {
     // the full path to the .patt pattern files
     protected final String patternPath = "extra/patterns";
     // the dimensions at which the AR will take place. with the current library 1280x720 is about the highest possible resolution.
-    protected final int arWidth = 1280;
-    protected final int arHeight = 720;
+    protected final int arWidth = 1440;
+    protected final int arHeight = 900;
     // the number of pattern markers (from the complete list of .patt files) that will be detected, here the first 100 from the list.
     protected final int numMarkers = 100;
     protected float displayScale;
@@ -29,7 +29,7 @@ public class ARHelper extends PApplet {
     public void setup()
     {
         // initialize Camera
-        camera = new Capture(this, "name=HD Pro Webcam C920,size=1280x720,fps=30");
+        camera = new Capture(this, "name=HD Pro Webcam C920,size=1440x900,fps=30");
 
         // resize the sketch and set the renderer
         size(arWidth, arHeight, OPENGL);
