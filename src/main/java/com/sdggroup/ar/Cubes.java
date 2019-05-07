@@ -5,8 +5,7 @@ import processing.core.PApplet;
 
 public class Cubes extends ARHelper {
 
-    public void draw()
-    {
+    public void draw() {
         // if there is a camera available
         if (camera.available()) {
             initCameraAndDetectMarkers();
@@ -23,10 +22,12 @@ public class Cubes extends ARHelper {
         for (int i = 0; i < numMarkers; i++) {
             // if the marker does NOT exist continue to the next marker (do nothing)
             //if ((!nya.isExistMarker(i)) || ((i != 12) && (i != 23) && (i != 45) && (i != 88))) { continue; }
-            if ((!nya.isExistMarker(i))) { continue; }
+            if ((!nya.isExist(i))) {
+                continue;
+            }
 
             // get the Matrix for this marker and use it (through setMatrix)
-            setMatrix(nya.getMarkerMatrix(i));
+            setMatrix(nya.getMatrix(i));
 
             // set color (RGB) and transparency
             colors[i] = color(255, 0, 0, 100);

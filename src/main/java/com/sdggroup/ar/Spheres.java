@@ -5,8 +5,7 @@ import processing.core.PApplet;
 
 public class Spheres extends ARHelper {
 
-    public void draw()
-    {
+    public void draw() {
         // if there is a camera available
         if (camera.available()) {
             initCameraAndDetectMarkers();
@@ -20,12 +19,14 @@ public class Spheres extends ARHelper {
         // set the AR perspective uniformly, this general point-of-view is the same for all markers
         nya.setARPerspective();
         // iterates over all the markers
-        for (int i=0; i<numMarkers; i++) {
+        for (int i = 0; i < numMarkers; i++) {
             // if the marker does NOT exist continue to the next marker (do nothing)
-            if ((!nya.isExistMarker(i)) || ((i != 12) && (i != 23) && (i != 45) && (i != 88))) { continue; }
+            if ((!nya.isExist(i)) || ((i != 12) && (i != 23) && (i != 45) && (i != 88))) {
+                continue;
+            }
 
             // get the Matrix for this marker and use it (through setMatrix)
-            setMatrix(nya.getMarkerMatrix(i));
+            setMatrix(nya.getMatrix(i));
 
             // set color (RGB) and transparency
             colors[i] = color(155, 0, 155, 140);

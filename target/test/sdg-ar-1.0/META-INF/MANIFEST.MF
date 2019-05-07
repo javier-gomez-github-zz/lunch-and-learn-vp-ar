@@ -1,7 +1,0 @@
-Manifest-Version: 1.0
-Built-By: jgomez
-Class-Path: lib/
-Created-By: Apache Maven 3.6.1
-Build-Jdk: 1.8.0_192
-Main-Class: com.sdggroup.ar.AR
-

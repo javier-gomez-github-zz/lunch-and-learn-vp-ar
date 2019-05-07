@@ -6,8 +6,7 @@ import processing.core.PVector;
 
 public class Coordinates extends ARHelper {
 
-    public void draw()
-    {
+    public void draw() {
         // if there is a camera available
         if (camera.available()) {
             initCameraAndDetectMarkers();
@@ -32,7 +31,9 @@ public class Coordinates extends ARHelper {
         for (int i = 0; i < numMarkers; i++) {
             // if the marker does NOT exist continue to the next marker (do nothing)
             //if ((!nya.isExistMarker(i)) || ((i != 12) && (i != 23) && (i != 45) && (i != 88))) { continue; }
-            if ((!nya.isExistMarker(i))) { continue; }
+            if ((!nya.isExist(i))) {
+                continue;
+            }
 
             // get the four marker coordinates into an array of 2D PVectors
             PVector[] pos2d = nya.getMarkerVertex2D(i);

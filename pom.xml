@@ -14,11 +14,6 @@
     <build>
         <plugins>
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.22.1</version>
-            </plugin>
-            <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.8.0</version>
                 <configuration>
@@ -26,6 +21,7 @@
                     <target>1.8</target>
                 </configuration>
             </plugin>
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
@@ -34,14 +30,13 @@
                     <archive>
                         <manifest>
                             <addClasspath>true</addClasspath>
+                            <classpathPrefix>lib/</classpathPrefix>
                             <mainClass>com.sdggroup.ar.AR</mainClass>
                         </manifest>
-                        <manifestEntries>
-                            <Class-Path>lib/</Class-Path>
-                        </manifestEntries>
                     </archive>
                 </configuration>
             </plugin>
+            <!--            Look for https://jtoprocessing.tumblr.com/post/63945371987/how-to-processing-maven-eclipse-->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-dependency-plugin</artifactId>
@@ -61,82 +56,45 @@
                     </execution>
                 </executions>
             </plugin>
+
         </plugins>
     </build>
 
     <dependencies>
-
-        <dependency>
-            <groupId>saito</groupId>
-            <artifactId>objloader</artifactId>
-            <version>1.0</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/lib/OBJLoader.jar</systemPath>
-        </dependency>
-
         <dependency>
             <groupId>org.processing</groupId>
             <artifactId>core</artifactId>
-            <version>1.0</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/lib/core/library/core.jar</systemPath>
-        </dependency>
-
-        <dependency>
-            <groupId>jp.nyatla</groupId>
-            <artifactId>nyar4psg</artifactId>
-            <version>1.0</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/lib/NyAR4psg.jar</systemPath>
+            <version>2.2.1</version>
         </dependency>
 
         <dependency>
             <groupId>org.processing</groupId>
             <artifactId>video</artifactId>
-            <version>1.0</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/lib/video.jar</systemPath>
+            <version>2.2.1</version>
         </dependency>
 
         <dependency>
-            <groupId>com.jogl</groupId>
+            <groupId>org.jogamp.jogl</groupId>
             <artifactId>jogl-all</artifactId>
-            <version>1.0</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/lib/core/library/jogl-all.jar</systemPath>
+            <version>2.3.2</version>
         </dependency>
 
         <dependency>
-            <groupId>org.gstreamer</groupId>
+            <groupId>org.jogamp.gluegen</groupId>
+            <artifactId>gluegen-rt</artifactId>
+            <version>2.3.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.googlecode.gstreamer-java</groupId>
             <artifactId>gstreamer-java</artifactId>
-            <version>1.0</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/lib/gstreamer-java.jar</systemPath>
+            <version>1.6</version>
         </dependency>
 
         <dependency>
-            <groupId>com.sun</groupId>
+            <groupId>net.java.dev.jna</groupId>
             <artifactId>jna</artifactId>
-            <version>1.0</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/lib/jna.jar</systemPath>
+            <version>4.2.2</version>
         </dependency>
-
-        <dependency>
-            <groupId>com.jogamp</groupId>
-            <artifactId>gluegen</artifactId>
-            <version>1.0</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/lib/core/library/gluegen-rt.jar</systemPath>
-        </dependency>
-
-        <dependency>
-            <groupId>jp.nyatla</groupId>
-            <artifactId>nyartoolkit</artifactId>
-            <version>1.0</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/lib/NyARToolkit.jar</systemPath>
-        </dependency>
-
     </dependencies>
 </project>

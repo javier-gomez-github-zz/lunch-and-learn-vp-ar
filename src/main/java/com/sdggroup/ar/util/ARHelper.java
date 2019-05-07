@@ -17,7 +17,7 @@ public class ARHelper extends PApplet {
     protected final String patternPath = "extra/patterns";
     // the dimensions at which the AR will take place. with the current library 1280x720 is about the highest possible resolution.
     protected final int arWidth = 1280;
-    protected final int arHeight = 720;
+    protected final int arHeight = 800;
     // the number of pattern markers (from the complete list of .patt files) that will be detected, here the first 100 from the list.
     protected final int numMarkers = 100;
     protected float displayScale;
@@ -33,7 +33,7 @@ public class ARHelper extends PApplet {
         camera = new Capture(this);
 
         // resize the sketch and set the renderer
-        size(arWidth, arHeight, OPENGL);
+        size(arWidth, arHeight);
 
         // start capturing
         camera.start();
@@ -45,7 +45,7 @@ public class ARHelper extends PApplet {
         noStroke();
 
         // create a new MultiMarker at a specific resolution (arWidth x arHeight), with the default camera calibration and coordinate system
-        nya = new MultiMarker(this, arWidth, arHeight, camPara, NyAR4PsgConfig.CONFIG_DEFAULT);
+        nya = new MultiMarker(this, arWidth, arHeight, camPara);
 
         // set the delay (0 - 255) after which a lost marker is no longer displayed. by default set to something higher, but here manually set to immediate.
         nya.setLostDelay(1);

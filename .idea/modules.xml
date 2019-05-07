@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Lunch and Learn - VP.iml" filepath="$PROJECT_DIR$/Lunch and Learn - VP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sdg-ar.iml" filepath="$PROJECT_DIR$/sdg-ar.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/sdg-ar.iml" filepath="$PROJECT_DIR$/.idea/sdg-ar.iml" />
     </modules>
   </component>

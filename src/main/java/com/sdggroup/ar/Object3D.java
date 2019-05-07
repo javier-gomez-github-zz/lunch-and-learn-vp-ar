@@ -6,9 +6,9 @@ import saito.objloader.OBJModel;
 
 public class Object3D extends ARHelper {
 
-    OBJModel teapotObject;
-    OBJModel catObject;
-    OBJModel iphoneObject;
+    private OBJModel teapotObject;
+    private OBJModel catObject;
+    private OBJModel iphoneObject;
 
     @Override
     public void setup() {
@@ -25,8 +25,7 @@ public class Object3D extends ARHelper {
 
     }
 
-    public void draw()
-    {
+    public void draw() {
         // if there is a camera available
         if (camera.available()) {
             initCameraAndDetectMarkers();
@@ -36,16 +35,18 @@ public class Object3D extends ARHelper {
     }
 
     // this function draws correctly placed 3D objects on top of detected markers
-    void drawObject3D() {
+    private void drawObject3D() {
         // set the AR perspective uniformly, this general point-of-view is the same for all markers
         nya.setARPerspective();
         // iterates over all the markers
         for (int i = 0; i < numMarkers; i++) {
             // if the marker does NOT exist continue to the next marker (do nothing)
-            if ((!nya.isExistMarker(i)) || ((i != 12) && (i != 23) && (i != 45))) { continue; }
+            if ((!nya.isExist(i)) || ((i != 12) && (i != 23) && (i != 45))) {
+                continue;
+            }
 
             // get the Matrix for this marker and use it (through setMatrix)
-            setMatrix(nya.getMarkerMatrix(i));
+            setMatrix(nya.getMatrix(i));
 
             translate(0, 0, 30);
             rotateX(4.7f);
@@ -57,8 +58,7 @@ public class Object3D extends ARHelper {
                 fill(255, 0, 0);
                 // draws the 3D Object
                 teapotObject.draw();
-            }
-            else if (i == 23) {
+            } else if (i == 23) {
                 noStroke();
                 // draws the 3D Object
                 catObject.draw();
