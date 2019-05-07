@@ -2,268 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="acacbf21-8f1f-4581-bcea-c6eccc9a36c9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/NyAR4psg.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/NyARToolkit.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/OBJLoader.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/core/library/core.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/core/library/export.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/core/library/gluegen-rt-natives-linux-amd64.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/core/library/gluegen-rt-natives-linux-armv6hf.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/core/library/gluegen-rt-natives-linux-i586.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/core/library/gluegen-rt-natives-macosx-universal.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/core/library/gluegen-rt-natives-windows-amd64.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/core/library/gluegen-rt-natives-windows-i586.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/core/library/gluegen-rt.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/core/library/jogl-all-natives-linux-amd64.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/core/library/jogl-all-natives-linux-armv6hf.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/core/library/jogl-all-natives-linux-i586.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/core/library/jogl-all-natives-macosx-universal.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/core/library/jogl-all-natives-windows-amd64.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/core/library/jogl-all-natives-windows-i586.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/core/library/jogl-all.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/gstreamer-java.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jna.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/libcrypto.dylib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/libdc1394.dylib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/libdca.dylib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/libdv.dylib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/libffi.dylib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/libgio-2.0.dylib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/libglib-2.0.dylib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/libgmodule-2.0.dylib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/libgobject-2.0.dylib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/libgstapp-0.10.dylib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/libgstaudio-0.10.dylib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/libgstbase-0.10.dylib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/libgstbasecamerabinsrc-0.10.dylib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/libgstbasevideo-0.10.dylib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/libgstcodecparsers-0.10.dylib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/libgstcontroller-0.10.dylib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/libgstdataprotocol-0.10.dylib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/libgstfft-0.10.dylib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/libgstinterfaces-0.10.dylib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/libgstnetbuffer-0.10.dylib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/libgstpbutils-0.10.dylib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/libgstphotography-0.10.dylib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/libgstreamer-0.10.dylib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/libgstriff-0.10.dylib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/libgstrtp-0.10.dylib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/libgstrtsp-0.10.dylib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/libgstsdp-0.10.dylib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/libgsttag-0.10.dylib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/libgstvideo-0.10.dylib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/libgthread-2.0.dylib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/libiconv.dylib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/libintl.dylib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/libjasper.dylib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/libjpeg.dylib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/libmpcdec.dylib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/libncurses.dylib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/libogg.dylib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/liborc-0.4.dylib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/liborc-test-0.4.dylib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/libssl.dylib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/libtheoradec.dylib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/libtheoraenc.dylib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/libusb-1.0.dylib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/libvorbis.dylib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/libvorbisenc.dylib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/libxml2.dylib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/libxvidcore.dylib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/libz.dylib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstadder.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstadpcmdec.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstadpcmenc.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstaiff.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstalaw.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstalpha.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstalphacolor.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstannodex.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstapetag.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstapexsink.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstapp.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstapplemedia.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstasfmux.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstaudioconvert.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstaudiofx.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstaudioparsers.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstaudiorate.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstaudioresample.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstaudiotestsrc.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstauparse.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstautoconvert.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstautodetect.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstavi.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstbayer.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstbz2.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstcamerabin.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstcamerabin2.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstcdxaparse.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstcoloreffects.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstcolorspace.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstcoreelements.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstcoreindexers.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstcutter.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstdataurisrc.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstdc1394.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstdccp.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstdebug.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstdebugutilsbad.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstdecodebin.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstdecodebin2.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstdeinterlace.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstdtmf.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstdtsdec.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstdv.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstdvbsuboverlay.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstdvdspu.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstefence.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgsteffectv.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstencodebin.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstequalizer.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstfestival.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstffmpeg.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstffmpegcolorspace.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstffmpegscale.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstfieldanalysis.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstflv.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstflxdec.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstfragmented.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstfreeze.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstfrei0r.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstgaudieffects.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstgdp.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstgeometrictransform.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstgio.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstgoom.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstgoom2k1.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstgsettingselements.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgsth264parse.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgsthdvparse.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgsticydemux.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstid3demux.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstid3tag.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstimagefreeze.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstinterlace.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstinterleave.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstisomp4.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstivfparse.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstjp2k.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstjp2kdecimator.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstjpegformat.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstlegacyresample.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstlevel.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstliveadder.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstmatroska.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstmpegdemux.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstmpegpsmux.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstmpegtsdemux.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstmpegtsmux.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstmpegvideoparse.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstmulaw.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstmultifile.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstmultipart.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstmusepack.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstmve.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstmxf.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstnavigationtest.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstnsf.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstnuvdemux.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstogg.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstoss4audio.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstosxaudio.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstosxvideosink.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstpatchdetect.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstpcapparse.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstplaybin.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstpnm.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstpostproc.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstrawparse.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstreal.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstreplaygain.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstrfbsrc.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstrtp.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstrtpmanager.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstrtpmux.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstrtpvp8.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstrtsp.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstscaletempoplugin.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstsdi.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstsdpelem.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstsegmentclip.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstshapewipe.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstsiren.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstsmpte.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstspectrum.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstspeed.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgststereo.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstsubenc.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstsubparse.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgsttcp.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgsttheora.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgsttta.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgsttypefindfunctions.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstudp.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstvideobox.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstvideocrop.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstvideofilter.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstvideofiltersbad.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstvideomaxrate.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstvideomeasure.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstvideomixer.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstvideoparsersbad.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstvideorate.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstvideoscale.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstvideosignal.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstvideotestsrc.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstvmnc.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstvolume.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstvorbis.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstwavenc.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstwavparse.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgstxvid.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgsty4mdec.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/macosx64/plugins/libgsty4menc.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/video.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sdggroup/ar/AR.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sdggroup/ar/AR.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sdggroup/ar/Coordinates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sdggroup/ar/Coordinates.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sdggroup/ar/Cubes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sdggroup/ar/Cubes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sdggroup/ar/Object3D.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sdggroup/ar/Object3D.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sdggroup/ar/Spheres.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sdggroup/ar/Spheres.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sdggroup/ar/SpheresAndTextures.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sdggroup/ar/SpheresAndTextures.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sdggroup/ar/util/ARHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sdggroup/ar/util/ARHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sdggroup/ar/AR.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sdggroup/ar/Coordinates.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sdggroup/ar/Cubes.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sdggroup/ar/Object3D.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sdggroup/ar/Spheres.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sdggroup/ar/SpheresAndTextures.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sdggroup/ar/util/ARHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lib/core-1.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lib/gluegen-1.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lib/gstreamer-java-1.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lib/jna-1.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lib/jogl-all-1.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lib/nyar4psg-1.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lib/nyartoolkit-1.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lib/objloader-1.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lib/video-1.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sdg-ar-1.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test/sdg-ar-1.0/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test/sdg-ar-1.0/META-INF/maven/com.sdggroup/sdg-ar/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test/sdg-ar-1.0/META-INF/maven/com.sdggroup/sdg-ar/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test/sdg-ar-1.0/com/sdggroup/ar/AR.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test/sdg-ar-1.0/com/sdggroup/ar/Coordinates.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test/sdg-ar-1.0/com/sdggroup/ar/Cubes.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test/sdg-ar-1.0/com/sdggroup/ar/Object3D.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test/sdg-ar-1.0/com/sdggroup/ar/Spheres.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test/sdg-ar-1.0/com/sdggroup/ar/SpheresAndTextures.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test/sdg-ar-1.0/com/sdggroup/ar/util/ARHelper.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -281,17 +21,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/sdggroup/ar/AR.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="170">
+              <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/sdggroup/ar/Coordinates.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="557">
+              <caret line="40" column="12" selection-start-line="40" selection-start-column="12" selection-end-line="40" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="75" column="20" selection-start-line="75" selection-start-column="20" selection-end-line="75" selection-end-column="20" />
+            <state relative-caret-position="1666">
+              <caret line="98" column="19" selection-start-line="98" selection-start-column="19" selection-end-line="98" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -326,13 +75,13 @@
         <option value="$PROJECT_DIR$/src/main/java/jp/nyatla/nyar4psg/MultiMarker.java" />
         <option value="$PROJECT_DIR$/src/main/java/jp/nyatla/nyartoolkit/core/marker/nft/NyARNftFsetFile.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sdggroup/ar/util/ARHelper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sdggroup/ar/Coordinates.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sdggroup/ar/Cubes.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sdggroup/ar/Object3D.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sdggroup/ar/Spheres.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sdggroup/ar/SpheresAndTextures.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sdggroup/ar/AR.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sdggroup/ar/Coordinates.java" />
       </list>
     </option>
   </component>
@@ -350,9 +99,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="28" />
     <option name="width" value="1920" />
-    <option name="height" value="1018" />
+    <option name="height" value="1046" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -498,18 +246,18 @@
       <option name="presentableId" value="Default" />
       <updated>1557216509856</updated>
       <workItem from="1557216511262" duration="1290000" />
-      <workItem from="1557219766656" duration="14488000" />
+      <workItem from="1557219766656" duration="15253000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15778000" />
+    <option name="totallyTimeSpent" value="16543000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1046" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17307693" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17307693" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -530,7 +278,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.10844017" />
+      <window_info active="true" anchor="right" id="Maven" order="3" visible="true" weight="0.10844017" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="right" id="Palette&#9;" order="5" />
       <window_info anchor="right" id="SciView" order="6" show_stripe_button="false" />
@@ -834,9 +582,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sdggroup/ar/Coordinates.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/jp/nyatla/nyar4psg/MultiMarker.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="282">
@@ -906,17 +651,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sdggroup/ar/AR.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="1666">
+          <caret line="98" column="19" selection-start-line="98" selection-start-column="19" selection-end-line="98" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sdggroup/ar/AR.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="75" column="20" selection-start-line="75" selection-start-column="20" selection-end-line="75" selection-end-column="20" />
+        <state relative-caret-position="170">
+          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sdggroup/ar/Coordinates.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="557">
+          <caret line="40" column="12" selection-start-line="40" selection-start-column="12" selection-end-line="40" selection-end-column="12" />
         </state>
       </provider>
     </entry>

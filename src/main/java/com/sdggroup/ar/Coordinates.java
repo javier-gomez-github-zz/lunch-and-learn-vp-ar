@@ -6,7 +6,8 @@ import processing.core.PVector;
 
 public class Coordinates extends ARHelper {
 
-    public void draw() {
+    public void draw()
+    {
         // if there is a camera available
         if (camera.available()) {
             initCameraAndDetectMarkers();
@@ -16,7 +17,7 @@ public class Coordinates extends ARHelper {
     }
 
     // this function draws the marker coordinates, note that this is completely 2D and based on the AR dimensions (not the final display size)
-    void drawCoordinates() {
+    private void drawCoordinates() {
         // set the text alignment
         textAlign(LEFT, TOP);
         // set the text size
@@ -31,22 +32,20 @@ public class Coordinates extends ARHelper {
         for (int i = 0; i < numMarkers; i++) {
             // if the marker does NOT exist continue to the next marker (do nothing)
             //if ((!nya.isExistMarker(i)) || ((i != 12) && (i != 23) && (i != 45) && (i != 88))) { continue; }
-            if ((!nya.isExist(i))) {
-                continue;
-            }
+            if ((!nya.isExist(i))) { continue; }
 
             // get the four marker coordinates into an array of 2D PVectors
             PVector[] pos2d = nya.getMarkerVertex2D(i);
 
             // draw each vector both textually and with a red dot
-            for (int j = 0; j < pos2d.length; j++) {
-                String s = "(" + (pos2d[j].x) + "," + (pos2d[j].y) + ")";
+            for (PVector pVector : pos2d) {
+                String s = "(" + (pVector.x) + "," + (pVector.y) + ")";
                 fill(255);
-                rect(pos2d[j].x, pos2d[j].y, textWidth(s) + 3, textAscent() + textDescent() + 3);
+                rect(pVector.x, pVector.y, textWidth(s) + 3, textAscent() + textDescent() + 3);
                 fill(0);
-                text(s, pos2d[j].x + 2, pos2d[j].y + 2);
+                text(s, pVector.x + 2, pVector.y + 2);
                 fill(255, 0, 0);
-                ellipse(pos2d[j].x, pos2d[j].y, 10, 10);
+                ellipse(pVector.x, pVector.y, 10, 10);
             }
         }
     }
