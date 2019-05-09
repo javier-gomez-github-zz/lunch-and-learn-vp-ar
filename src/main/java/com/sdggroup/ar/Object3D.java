@@ -6,23 +6,30 @@ import saito.objloader.OBJModel;
 
 public class Object3D extends ARHelper {
 
-    private OBJModel teapotObject;
-    private OBJModel catObject;
-    private OBJModel iphoneObject;
+    private OBJModel teapot;
+    private OBJModel cat;
+    private OBJModel iPhone;
+    private OBJModel crema;
+    private OBJModel pill;
 
     @Override
     public void setup() {
         super.setup();
-        teapotObject = new OBJModel(this, "extra/objects/teapot/teapot.obj");
-        teapotObject.scale(20);
-        teapotObject.disableMaterial();
+        teapot = new OBJModel(this, "extra/objects/teapot/teapot.obj");
+        teapot.scale(20);
+        teapot.disableMaterial();
 
-        catObject = new OBJModel(this, "extra/objects/cat/cat.obj");
-        catObject.scale(250);
+        cat = new OBJModel(this, "extra/objects/cat/cat.obj");
+        cat.scale(250);
 
-        iphoneObject = new OBJModel(this, "extra/objects/iphone/iPhone5.obj");
-        iphoneObject.scale(0.15f);
+        iPhone = new OBJModel(this, "extra/objects/iphone/iPhone5.obj");
+        iPhone.scale(0.15f);
 
+        crema = new OBJModel(this, "extra/objects/crema/crema.obj");
+        crema.scale(50f);
+
+        pill= new OBJModel(this, "extra/objects/pill/pill.obj");
+        pill.scale(150f);
     }
 
     public void draw() {
@@ -41,7 +48,7 @@ public class Object3D extends ARHelper {
         // iterates over all the markers
         for (int i = 0; i < numMarkers; i++) {
             // if the marker does NOT exist continue to the next marker (do nothing)
-            if ((!nya.isExist(i)) || ((i != 12) && (i != 23) && (i != 45))) {
+            if ((!nya.isExist(i))) {
                 continue;
             }
 
@@ -51,21 +58,31 @@ public class Object3D extends ARHelper {
             translate(0, 0, 30);
             rotateX(4.7f);
             lights();
-            if (i == 12) {
+
+            // Markers: 1 = 91; 2 = 10; 3 = 16; 4 = 31; 5 = 51; 6 = 58; 7 = 94
+            if (i == 91) {
                 // give the object a black stroke
                 stroke(0, 0, 0);
                 // fill the object by it's individual color
                 fill(255, 0, 0);
                 // draws the 3D Object
-                teapotObject.draw();
-            } else if (i == 23) {
+                teapot.draw();
+            } else if (i == 10) {
                 noStroke();
                 // draws the 3D Object
-                catObject.draw();
-            } else if (i == 45) {
+                cat.draw();
+            } else if (i == 16) {
                 noStroke();
                 // draws the 3D Object
-                iphoneObject.draw();
+                iPhone.draw();
+            } else if (i == 31) {
+                noStroke();
+                // draws the 3D Object
+                crema.draw();
+            } else if (i == 51) {
+                noStroke();
+                // draws the 3D Object
+                pill.draw();
             }
 
         }

@@ -39,13 +39,14 @@ public class SpheresAndTextures extends ARHelper {
         // iterates over all the markers
         for (int i = 0; i < numMarkers; i++) {
             // if the marker does NOT exist continue to the next marker (do nothing)
-            if ((!nya.isExist(i)) || ((i != 12) && (i != 23) && (i != 45) && (i != 88))) {
+            if ((!nya.isExist(i))) {
                 continue;
             }
 
             // get the Matrix for this marker and use it (through setMatrix)
             setMatrix(nya.getMatrix(i));
-            scale(1, -1); // turn things upside down to work intuitively for Processing users
+
+            //scale(1, -1); // turn things upside down to work intuitively for Processing users
 
             // translate the sphere on axis Z (for perspective)
             translate(0, 0, 100);

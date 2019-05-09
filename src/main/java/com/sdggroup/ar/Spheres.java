@@ -15,13 +15,13 @@ public class Spheres extends ARHelper {
     }
 
     // this function draws correctly placed 3D spheres on top of detected markers
-    void drawSpheres() {
+    private void drawSpheres() {
         // set the AR perspective uniformly, this general point-of-view is the same for all markers
         nya.setARPerspective();
         // iterates over all the markers
         for (int i = 0; i < numMarkers; i++) {
             // if the marker does NOT exist continue to the next marker (do nothing)
-            if ((!nya.isExist(i)) || ((i != 12) && (i != 23) && (i != 45) && (i != 88))) {
+            if ((!nya.isExist(i))) {
                 continue;
             }
 
@@ -36,6 +36,7 @@ public class Spheres extends ARHelper {
 
             // turn on some lights
             lights();
+
             // give the sphere a black stroke
             stroke(0);
 

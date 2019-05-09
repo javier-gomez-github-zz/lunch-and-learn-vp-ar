@@ -9,6 +9,8 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Maven: org.freedesktop.gstreamer:gst1-java-core:1.0.0" level="project" />
+    <orderEntry type="library" name="Maven: net.java.dev.jna:jna:5.3.1" level="project" />
     <orderEntry type="library" name="Maven: org.processing:core:3.3.7" level="project" />
     <orderEntry type="library" name="Maven: org.jogamp.jogl:jogl-all:2.3.2" level="project" />
     <orderEntry type="library" name="Maven: org.jogamp.gluegen:gluegen-rt:2.3.2" level="project" />

@@ -1,0 +1,14 @@
+#
+## Alias OBJ Material File
+# Exported from SketchUp, (c) 2000-2012 Trimble Navigation Limited
+
+newmtl Plastic_Brown
+Ka 0.000000 0.000000 0.000000
+Kd 0.203922 0.133333 0.098039
+Ks 0.330000 0.330000 0.330000
+
+newmtl Main_body
+Ka 0.000000 0.000000 0.000000
+Kd 0.941176 0.917647 0.874510
+Ks 0.330000 0.330000 0.330000
+

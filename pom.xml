@@ -36,7 +36,6 @@
                     </archive>
                 </configuration>
             </plugin>
-            <!--            Look for https://jtoprocessing.tumblr.com/post/63945371987/how-to-processing-maven-eclipse-->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-dependency-plugin</artifactId>
@@ -67,12 +66,6 @@
             <version>3.3.7</version>
         </dependency>
 
-<!--        <dependency>-->
-<!--            <groupId>org.processing</groupId>-->
-<!--            <artifactId>video</artifactId>-->
-<!--            <version>3.3.7</version>-->
-<!--        </dependency>-->
-
         <dependency>
             <groupId>org.jogamp.jogl</groupId>
             <artifactId>jogl-all</artifactId>
@@ -96,6 +89,5 @@
             <artifactId>gst1-java-core</artifactId>
             <version>1.0.0</version>
         </dependency>
-
     </dependencies>
 </project>

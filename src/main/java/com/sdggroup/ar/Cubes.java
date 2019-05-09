@@ -15,13 +15,12 @@ public class Cubes extends ARHelper {
     }
 
     // this function draws correctly placed 3D boxes on top of detected markers
-    void drawBoxes() {
+    private void drawBoxes() {
         // set the AR perspective uniformly, this general point-of-view is the same for all markers
         nya.setARPerspective();
         // iterates over all the markers
         for (int i = 0; i < numMarkers; i++) {
             // if the marker does NOT exist continue to the next marker (do nothing)
-            //if ((!nya.isExistMarker(i)) || ((i != 12) && (i != 23) && (i != 45) && (i != 88))) { continue; }
             if ((!nya.isExist(i))) {
                 continue;
             }
@@ -30,13 +29,14 @@ public class Cubes extends ARHelper {
             setMatrix(nya.getMatrix(i));
 
             // set color (RGB) and transparency
-            colors[i] = color(255, 0, 0, 100);
+            colors[i] = color(255, 0, 0, 200);
 
             // translate the box on axis Z (for perspective)
             translate(0, 0, 30);
 
             // turn on some lights
             lights();
+
             // give the box a black stroke
             stroke(0);
 
@@ -44,7 +44,7 @@ public class Cubes extends ARHelper {
             fill(colors[i]);
 
             // draws the BOX (size 65)
-            box(65);
+            box(70);
         }
         // reset to the default perspective
         perspective();
